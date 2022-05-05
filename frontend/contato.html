@@ -17,6 +17,31 @@
             <a href="contato.html">Contato</a>
         </nav>
     </center>
-    
+    <form action="enviaremail.cs" method="post">
+        <label>Nome: </label>
+        <input type="text" name="nome" placeholder="Informe seu nome">
+
+        <label>Email: </label>
+        <input type="text" name="email" placeholder="Informe seu email">
+
+        <select name="estado">
+            <option value="">Selecione o Estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+
+        <label>Sexo: </label>
+        Masculino <input type="radio" name="sexo" value="M">
+        Feminino <input type="radio" name="sexo" value="F">
+
+        <p></p>
+
+        <label>Senha: </label>
+        <input type="password" name="senha" placeholder="Digite uma senha">
+
+        <input type="submit" name="enviar" value="Enviar">
+        <button type="reset">Limpar</button>
+    </form>
 </body>
 </html>
