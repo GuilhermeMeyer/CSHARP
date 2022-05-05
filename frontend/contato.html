@@ -15,30 +15,44 @@
             <a href="empresa.html">Empresa</a>
             <a href="servicos.html">Serviço</a>
             <a href="contato.html">Contato</a>
+            <a href="cadastro.html">Cadastro</a>
         </nav>
     </center>
     <form action="enviaremail.cs" method="post">
+
         <label>Nome: </label>
-        <input type="text" name="nome" placeholder="Informe seu nome">
+        <input type="text" name="nome" placeholder="Informe seu nome" required>
 
         <label>Email: </label>
-        <input type="text" name="email" placeholder="Informe seu email">
+        <input type="text" name="email" placeholder="Informe seu email" required>
 
-        <select name="estado">
+        <select name="estado" required>
             <option value="">Selecione o Estado</option>
             <option value="SC">Santa Catarina</option>
             <option value="PR">Paraná</option>
             <option value="RS">Rio Grande do Sul</option>
         </select>
 
+        <br></br>
+
         <label>Sexo: </label>
         Masculino <input type="radio" name="sexo" value="M">
         Feminino <input type="radio" name="sexo" value="F">
 
-        <p></p>
+        <label>Data: </label>
+        <input type="date" name="data">
+
+        <label>Comidas: </label>
+        <input type="checkbox" name="comida" value="Lasanha">Lasanha
+        <input type="checkbox" name="comida" value="Pizza">Pizza
+        <input type="checkbox" name="comida" value="Strogonoff">Strogonoff
+
+        <br></br>
 
         <label>Senha: </label>
-        <input type="password" name="senha" placeholder="Digite uma senha">
+        <input type="password" name="senha" placeholder="Digite uma senha" required>
+        
+        <br></br>
 
         <input type="submit" name="enviar" value="Enviar">
         <button type="reset">Limpar</button>
