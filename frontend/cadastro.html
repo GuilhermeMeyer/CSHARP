@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <center>
         <img src="img/original-61f8610472d4f.png" width="200px">
         <h1>Cadastro.</h1>
@@ -18,10 +19,12 @@
             <a href="cadastro.html">Cadastro</a>
         </nav>
     </center>
-    <form action="enviaremail.cs" method="post">
+    <br></br>
+    <form action="enviaremail.cs" method="get" enctype="multipart/form-data" enctype="multipart/form-data">
+        <!-- enctype="multipart/form-data" formulário com UPLOAD -->
 
         <label>Nome: </label>
-        <input type="text" name="nome" placeholder="Digite seu nome" required>
+        <input type="text" name="nome" value="Guilherme" placeholder="Digite seu nome" required>
 
         <label>CPF: </label>
         <input type="text" name="cpf" placeholder="Digite seu CPF" required>
@@ -30,18 +33,18 @@
         <input type="text" name="rg" placeholder="Digite seu RG" required>
 
         <label>Sexo: </label>
-        Masculino <input type="radio" name="sexo" value="M">
+        Masculino <input type="radio" name="sexo" checked value="M">
         Feminino <input type="radio" name="sexo" value="F">
 
         <label>Email: </label>
-        <input type="text" name="email" placeholder="Digite seu email" required>
+        <input type="text" name="email" value="guilhermepmeyer@gmail.com" placeholder="Digite seu email" required>
 
         <br></br>
         
         <label>Estado: </label>
         <select name="estado" required>
             <option value="">Selecione o Estado</option>
-            <option value="SC">Santa Catarina</option>
+            <option value="SC" selected>Santa Catarina</option>
             <option value="PR">Paraná</option>
             <option value="RS">Rio Grande do Sul</option>
         </select>

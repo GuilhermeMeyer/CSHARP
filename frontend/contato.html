@@ -18,7 +18,7 @@
             <a href="cadastro.html">Cadastro</a>
         </nav>
     </center>
-    <form action="enviaremail.cs" method="post">
+    <form action="enviaremail.cs" id="cadastroPessoa" class="cadastroPessoa" method="post">
 
         <label>Nome: </label>
         <input type="text" name="nome" placeholder="Informe seu nome" required>
@@ -50,8 +50,16 @@
         <br></br>
 
         <label>Senha: </label>
-        <input type="password" name="senha" placeholder="Digite uma senha" required>
+        <input type="password" name="senha" placeholder="Digite uma senha" minlength="8" maxlength="20" required>
         
+        <label>Foto</label>
+        <input type="file" name="foto" multiple>
+        <input type="hidden" name="codigoIBGE" value="1040450">
+
+        <br></br>
+
+        <textarea name="mensagem" id="areaDeTexto" cols="20" rows="10" maxlength="50" required></textarea>
+
         <br></br>
 
         <input type="submit" name="enviar" value="Enviar">
