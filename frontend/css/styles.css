@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html, body{
-    margin: 0;
+    margin: 1;
     padding: 0;
+}
+*{
+    font-family: 'Roboto', sans-serif;
 }
 nav{
     position: absolute;
@@ -8,19 +12,72 @@ nav{
     top: 0;
     width: 100%;
     height: 70px;
-    background:#00f7d2;
+    background:#043961;
 }
 .logoSite{
     float: left;
     width: 100;
     color: #fff;
 }
+.logoBlusoft{
+    margin-top: 80px;
+    float: center;
+}
+/* configuração navegação*/
 nav a{
     display: block;
     width: auto;
-    height: 56px;
+    height: 55px;
     padding: 4px;
     float: left;
-    line-height: 53px;
+    line-height: 70px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight:300;
+    font-size: 18px;
+}
 
+/*regra dos conteúdos*/
+main{
+    padding: 18px 10px;
+}
+.titulo{
+}
+.homeArticle{
+    width: 36%;
+    background: #fff;
+    margin: 5px 40px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 2px 6px rgba(0,0,0,0.81);
+    padding: 15px;
+    display: inline-block;
+}
+/*Caso for especificar propriedade de varíavel
+Exemplo: .homeArticle img,h2, etc... */
+.homeArticle{
+    margin-right: 10px;
+    border: 2px solid rgb(61, 96, 170);
+    border-radius: 15px;
+}
+.homeArticle active{
+
+}
+.homeArticle img{
+    display:inline-block;
+    margin-right: 10px;
+
+}
+.homeArticle a{
+    display: block;
+    width:auto;
+    padding: 4px;
+    background: ;
+    color:;
+    text-decoration: nome;
+    border-radius:5px;
+    float: right;
+}
+.homeArticle a hover{
+    background: rgb(61, 96, 170);
 }
