@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 html, body{
-    margin: 1;
+    margin: 0;
     padding: 0;
 }
 *{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
 }
 nav{
     position: absolute;
@@ -14,6 +14,50 @@ nav{
     height: 70px;
     background:#043961;
 }
+body.pageHome{
+    background: url('../img/6457dc8f063f284fe17e519dc28b5437.jpg') no-repeat center fixed;
+    background-size: 100vw; /* viewport width, área da tela */
+}
+body.pageServicos video{
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+body.pageServicos table{
+    width: 90%;
+    border: 1px solid #043961;
+    margin: 0 auto;
+}
+body.pageServicos table td{
+    background: #fff;
+    padding: 4px;
+}
+body.pageServicos table tr:nth-child(odd) td{
+    background-color: #fff;
+}
+body.pageServicos table tr.titulo td{
+    background: #62accc;
+    text-align: center;
+    font-size: 20px;
+    text-transform: bold;
+}
+body.pageServicos table tr:nth-child(even) td{
+    background-color: rgb(255, 231, 185);
+}
+/*body.pageServicos .lente{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;;
+    opacity: 0.9;
+    z-index: -1;
+}*/
 .logoSite{
     float: left;
     width: 100;
@@ -23,6 +67,11 @@ nav{
     margin-top: 80px;
     float: center;
 }
+.tituloSite{
+    margin-top: 80px;
+    text-align: center;
+}
+
 /* configuração navegação*/
 nav a{
     display: block;
@@ -43,8 +92,8 @@ main{
     padding: 18px 10px;
 }
 .homeArticle{
-    width: 20%;
-    height: 300px;
+    width: 21%;
+    height: 30%;
     background: #fff;
     margin: 5px 110px;
     border-radius: 18px;
@@ -65,6 +114,8 @@ Exemplo: .homeArticle img,h2, etc... */
 }
 .homeArticle img{
     float: left;
+    height: 70px;
+    width: 100px;
     margin-right: 10px;
     border: 1px solid #20576C;
     border-radius: 15px;
@@ -78,7 +129,7 @@ Exemplo: .homeArticle img,h2, etc... */
     font-style: italic;
     text-align: justify;
     text-indent: 20px;
-    font-size: 14px;
+    font-size: 15px;
 }
 .homeArticle a{
     display: block;
@@ -99,8 +150,8 @@ Exemplo: .homeArticle img,h2, etc... */
 }
 .carousel{
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background: rgb(0, 0, 60);
     overflow: hidden;
 }
@@ -114,6 +165,11 @@ Exemplo: .homeArticle img,h2, etc... */
     list-style: none;
     margin: 1%;
     display: inline-block;
+}
+body.pageServicos table{
+    width: 90%;
+    margin: 0 auto;
+
 }
 footer{
     width: 100%;
@@ -131,8 +187,8 @@ footer span{
 footer .assinatura{
     text-align: right;
 }
-footer .assinatura a {
-    color: #ccc;
+footer .assinatura a{
+    color: rgb(166, 62, 62);
     text-decoration: none;
     padding-left: 25px;
 }
