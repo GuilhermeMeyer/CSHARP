@@ -24,7 +24,7 @@ body.pageHome video{
     opacity: 0.9;
 }
 body.pageEmpresa{
-    
+
 }
 body.pageEmpresa video{
     position: fixed;
@@ -273,7 +273,11 @@ Exemplo: .homeArticle img,h2, etc... */
     background: rgb(255, 231, 185);
 
 }
-
+.empresaArticle li{
+    list-style: none;
+    margin: 0px 0%;
+    
+}
 .empresaArticle img{
     float: left;
     height: 70px;
@@ -298,24 +302,6 @@ Exemplo: .homeArticle img,h2, etc... */
     margin: 1px;
     text-indent: 20px;
     font-size: 17px;
-}
-.empresaArticle a{
-    display: block;
-    width: auto;
-    padding: 4px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background: #20576C;
-    color:white;
-    text-decoration: none;
-    border-radius: 5px;
-    float: right;
-}
-.empresaArticle a:hover{
-    background: rgb(40, 35, 35);
-    padding: 6px;
-    border-radius: 10px;
-    margin-bottom: 11px;
 }
 .carousel{
     width: 99%;
